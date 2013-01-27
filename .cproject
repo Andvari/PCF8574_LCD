@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?>
-
-<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="de.innot.avreclipse.configuration.app.debug.1461297072">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="de.innot.avreclipse.configuration.app.debug.1461297072" moduleId="org.eclipse.cdt.core.settings" name="Debug">
@@ -45,7 +43,7 @@
 							</tool>
 							<tool id="de.innot.avreclipse.tool.linker.winavr.app.debug.582283648" name="AVR C Linker" superClass="de.innot.avreclipse.tool.linker.winavr.app.debug"/>
 							<tool id="de.innot.avreclipse.tool.cpplinker.app.debug.1158795471" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.app.debug">
-								<option id="de.innot.avreclipse.cpplinker.option.otherlinkargs.826389367" name="Other Arguments" superClass="de.innot.avreclipse.cpplinker.option.otherlinkargs" value="--cref --cref -Wl,-gc-sections" valueType="string"/>
+								<option id="de.innot.avreclipse.cpplinker.option.otherlinkargs.826389367" name="Other Arguments" superClass="de.innot.avreclipse.cpplinker.option.otherlinkargs" value="-Wl,-gc-sections" valueType="string"/>
 								<option id="de.innot.avreclipse.cpplinker.option.libpath.2001999244" name="Libraries Path (-L)" superClass="de.innot.avreclipse.cpplinker.option.libpath" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
 								</option>
@@ -135,8 +133,13 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="PCF8574-LCD.de.innot.avreclipse.project.winavr.elf_2.1.0.1543606017" name="AVR Cross Target Application" projectType="de.innot.avreclipse.project.winavr.elf_2.1.0"/>
 	</storageModule>
-	<storageModule moduleId="refreshScope" versionNumber="1">
-		<resource resourceType="PROJECT" workspacePath="/PCF8574_LCD"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/PCF8574_LCD"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/PCF8574_LCD"/>
+		</configuration>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
@@ -153,4 +156,5 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="de.innot.avreclipse.core.AVRGCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

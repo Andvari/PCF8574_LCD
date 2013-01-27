@@ -8,14 +8,15 @@
 
 #include "PCF8574_LCD.h"
 
-#define PCF8574_BASE_ADDRESS	0x27
+#define PCF8574_BASE_ADDRESS	0x20
 
 
 PCF8574_LCD :: PCF8574_LCD(void){
-
+	Wire.begin();
 }
 
 void PCF8574_LCD :: begin(void){
+
 /*
 	write((uint8_t)0x30);
 	delayMicroseconds(40);
@@ -49,7 +50,7 @@ void PCF8574_LCD :: write(uint8_t *){
 void PCF8574_LCD :: write(uint8_t byte){
     Wire.beginTransmission(PCF8574_BASE_ADDRESS);
     Wire.write(byte);
-    Wire.endTransmission(true);
+    Wire.endTransmission();
 }
 
 void PCF8574_LCD :: print(uint8_t byte){
